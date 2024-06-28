@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Swift | Allin Lee&#39;s Home</title>
+<meta name="keywords" content="">
+<meta name="description" content="Some Notes on Swift Grammar
+This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.
+Functions
+Swift function parameters can have two names, one used externally and one used internally.
+func printTimesTable(for number: Int) {
+    for i in 1...12 {
+        print(&#34;\(i) x \(number) = \(i * number)&#34;)
+    }
+}
+printTimesTable(for: 5) // &#34;for&#34; is used externally
+Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type &ldquo;_&rdquo; before the parameter name.">
+<meta name="author" content="">
+<link rel="canonical" href="https://allinleeyl.github.io/homepage/posts/swift/">
+<link crossorigin="anonymous" href="/homepage/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://allinleeyl.github.io/homepage/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://allinleeyl.github.io/homepage/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://allinleeyl.github.io/homepage/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://allinleeyl.github.io/homepage/apple-touch-icon.png">
+<link rel="mask-icon" href="https://allinleeyl.github.io/homepage/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://allinleeyl.github.io/homepage/posts/swift/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Swift" />
+<meta property="og:description" content="Some Notes on Swift Grammar
+This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.
+Functions
+Swift function parameters can have two names, one used externally and one used internally.
+func printTimesTable(for number: Int) {
+    for i in 1...12 {
+        print(&#34;\(i) x \(number) = \(i * number)&#34;)
+    }
+}
+printTimesTable(for: 5) // &#34;for&#34; is used externally
+Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type &ldquo;_&rdquo; before the parameter name." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://allinleeyl.github.io/homepage/posts/swift/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-27T23:13:18+08:00" />
+<meta property="article:modified_time" content="2024-10-27T23:13:18+08:00" /><meta property="og:site_name" content="Hi!" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Swift"/>
+<meta name="twitter:description" content="Some Notes on Swift Grammar
+This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.
+Functions
+Swift function parameters can have two names, one used externally and one used internally.
+func printTimesTable(for number: Int) {
+    for i in 1...12 {
+        print(&#34;\(i) x \(number) = \(i * number)&#34;)
+    }
+}
+printTimesTable(for: 5) // &#34;for&#34; is used externally
+Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type &ldquo;_&rdquo; before the parameter name."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://allinleeyl.github.io/homepage/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Swift",
+      "item": "https://allinleeyl.github.io/homepage/posts/swift/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Swift",
+  "name": "Swift",
+  "description": "Some Notes on Swift Grammar This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.\nFunctions Swift function parameters can have two names, one used externally and one used internally.\nfunc printTimesTable(for number: Int) { for i in 1...12 { print(\u0026#34;\\(i) x \\(number) = \\(i * number)\u0026#34;) } } printTimesTable(for: 5) // \u0026#34;for\u0026#34; is used externally Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type \u0026ldquo;_\u0026rdquo; before the parameter name.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Some Notes on Swift Grammar This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.\nFunctions Swift function parameters can have two names, one used externally and one used internally.\nfunc printTimesTable(for number: Int) { for i in 1...12 { print(\"\\(i) x \\(number) = \\(i * number)\") } } printTimesTable(for: 5) // \"for\" is used externally Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type “_” before the parameter name.\nfunc greet (_ name: String, formal: Bool = false) { if formal == true { print(\"Hello, \\(name)\") } else { print(\"Hi! \\(name)\") } } greet(\"Trump\") // Hello, Trump greet(\"Taylor\") // Hi! Taylor The return keyword can be removed if a closure or function has only one line of code to make them easier to read.\nClosures You can assign functionality directly to a constant or variable. The assigned constant or variable is a closure which can be called like a function. You can also pass parameters to closures by placing them into braces. The in keyword marks the segment with parameters and body. Everything after in is the main body of closure itself.\nlet sayHello = { (name: String) -\u003e String in \"Hi, \\(name)\" } sayHello(\"Taylor\") // Hi, Taylor You can also directly use the closure like this:\nlet team = [\"Gloria\", \"Suzanne\", \"Tiffany\", \"Tasha\"] let onlyT = team.filter({ (name: String) -\u003e Bool in return name.hasPrefix(\"T\") }) // or you can even write your code in a more easire way let onlyT = team.filter { name in name.hasPrefix(\"T\") // the return keyword can be removed } // or go further by writing like this let onlyT = team.filter { $0.hasPrefix(\"T\") } print(onlyT) // [\"Tiffany\", \"Tasha\"] Structs Structs let us make our own data types. Structs can have constants, variables, and functions. If you want a struct method to change one of its properties, you must mark it as mutating. For example,\nstruct Album { let title: String let artist: String let isReleased: Bool = true func printSummary() { print(\"\\(title) by \\(artist)\") } mutating func removeFromSale() { isReleased = false } } let red = Album(title: \"Red\", artist: \"Taylor Swift\") Computed properties are variables computed at each call dynamically. You can also explicitly define the get and set method for the variable. For example:\nstruct Employee { var vacationAllowed = 14 var vacationTaken = 0 var vacationRemaining = Int { vacationAllowed - vacationTaken } var vacationRemaining = Int { // another version get { vacationAllowed - vacationTaken } set { vacationAllowed = vacationAllowed + newValue } } } In the set method, the newValue provided by Swift stores whatever value the user was trying to assign to this property.\nProperty observers are pieces of code that run when a property changes. didSet is called after the change has taken place. willSet is called before the change has taken place. For example,\nstruct Game { var score = 0 { didSet { print(\"Score is now \\(score)\") } } } Initializers\nstruct Player { let name: String let number: Int init(name: String) { self.name = name self.number = Int.random(in: 1...99) } } Classes Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.\nClasses let you create customized data types like structs, but are different from structs primarily in 6 key ways:\nClasses can be built upon or inherit characteristics from another class. Type casting enables you to check and interpret the type of a class instance at runtime. All structures have an automatically generated memberwise initializer, but classes do not. Unlike structures, class instances don’t receive a default memberwise initializer. All copies of a class share one particular set of data. That is, the copies are references to a single one rather than new instances. Classes can have a de-initializer using the keword deinit if needed. Classes let you change variable properties even in the class instance itself is constant (defined by the keyword let). If a child class wants to change the method it inherit from the parent class, the keyword override is used.\nAccess Control There are 4 most common access control options:\nprivate: Let nothing outside this struct read or write it. private(set): Something outside can read it, but only something inside can write it. fileprivate: Anything inside the file can read and write it. public: Anything can read and write it. Protocols Protocols define functionality that we expect other types to support. I think it is similar to interface in Java and virtual function in C++, even though there are differences. For example:\nprotocol Vehicle { var name: String { get } var currentPassengers: Int { get set } func travel(distance: Int) } struct Car: Vehicle { let name = \"Car\" var currentPassengers = 2 func travel(distance: Int) { print(\"The car drives \\(distance)km.\") } } Extensions Extensions let you add new functionality to any type. For example:\nextension String { func trimmed() -\u003e String { self.trimmingCharacters(in: .whitespacesAndNewlines) } mutating func trimmed() { self = self.trimmed() } var lines: [String] { self.components(seperatedBy: .newlines) } } let lyrics = \"\"\" I keep cruising Can't stop, won't stop moving \"\"\" print(lyrics.lines.count) // 2 Extension protocols add new functionality to a whole protocol. So any type conforming to the protocol gets access to them. For example, arraies, dictionaries, and sets all conform to a protocol called Collection.\nextension Collection { var isNotEmpty: Bool { isEmpty == false } } let guests = [\"Mario\", \"Luigi\"] print(guests.isNotEmpty) // true Optional Swift introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”.\nTo write an optional type, you write a question mark (?) after the name of the type that the optional contains — for example, the type of an optional Int is Int?\n// serverResponseCode contains an actual Int value of 404 var serverResponseCode: Int? = 404 // serverResponseCode now contains no value serverResponseCode = nil Optional chaining is a process for querying and calling properties, methods, and subscripts on an optional that might currently be nil. If the optional contains a value, the property, method, or subscript call succeeds; if the optional is nil, the property, method, or subscript call returns nil. Multiple queries can be chained together, and the entire chain fails gracefully if any link in the chain is nil.\nIf you create a new Person instance, its residence property is default initialized to nil, by virtue of being optional. In the code below, john has a residence property value of nil:\nclass Person { var residence: Residence? } class Residence { var numberOfRooms = 1 } let john = Person() If you try to access the numberOfRooms property of this person’s residence, by placing an exclamation point after residence to force the unwrapping of its value, you trigger a runtime error, because there’s no residence value to unwrap:\n// this triggers a runtime error let roomCount = john.residence!.numberOfRooms Optional chaining provides an alternative way to access the value of numberOfRooms. To use optional chaining, use a question mark. This tells Swift to “chain” on the optional residence property and to retrieve the value of numberOfRooms if residence exists.\nif let roomCount = john.residence?.numberOfRooms { print(\"John's residence has \\(roomCount) room(s).\") } else { print(\"Unable to retrieve the number of rooms.\") } // Prints \"Unable to retrieve the number of rooms.\" You can also use guard let. For example:\nfunc printSquire(of number: Int?) { guard let number = number else { print(\"number is nil\") return } print(\"\\(number) x \\(number) is \\(number * number)\") } You can use the nil coalescing operator (??) to unwrap the optional. If the optional is empty, nil coalescing lets you to provide a default value. For example\nlet tvShows = [] let curShow = tvShows.randomElement() ?? \"None\" // None let number = Int(\"\") ?? 0 // 0 You can use optional try by adding (?) after the keyword try. For example:\nenum UserError: Error { case badID, networkFailed } func getUser(id: Int) throws -\u003e String { throw UserError.networkFailed } if let user = try? getUser(id: 23) { print(user) } else { print(\"Wrong\") } ",
+  "wordCount" : "1425",
+  "inLanguage": "en",
+  "datePublished": "2024-10-27T23:13:18+08:00",
+  "dateModified": "2024-10-27T23:13:18+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://allinleeyl.github.io/homepage/posts/swift/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Allin Lee's Home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://allinleeyl.github.io/homepage/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://allinleeyl.github.io/homepage/" accesskey="h" title="Allin Lee&#39;s Home (Alt + H)">Allin Lee&#39;s Home</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://allinleeyl.github.io/homepage/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://allinleeyl.github.io/homepage/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Swift
+    </h1>
+    <div class="post-meta"><span title='2024-10-27 23:13:18 +0800 CST'>October 27, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="some-notes-on-swift-grammar">Some Notes on Swift Grammar<a hidden class="anchor" aria-hidden="true" href="#some-notes-on-swift-grammar">#</a></h1>
+<p>This is a note from the Video <a href="https://www.youtube.com/watch?v=n5X_V81OYnQ&amp;t=1239s">Learn the Essentials of Swift in one hour</a>. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language">this site</a>.</p>
+<h2 id="functionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languagefunctions"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions">Functions</a><a hidden class="anchor" aria-hidden="true" href="#functionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languagefunctions">#</a></h2>
+<p>Swift function parameters can have two names, one used externally and one used internally.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">printTimesTable</span>(<span style="color:#66d9ef">for</span> number: Int) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1.</span>..<span style="color:#ae81ff">12</span> {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>i<span style="color:#e6db74">)</span><span style="color:#e6db74"> x </span><span style="color:#e6db74">\(</span>number<span style="color:#e6db74">)</span><span style="color:#e6db74"> = </span><span style="color:#e6db74">\(</span>i <span style="color:#f92672">*</span> number<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>printTimesTable(<span style="color:#66d9ef">for</span>: <span style="color:#ae81ff">5</span>) <span style="color:#75715e">// &#34;for&#34; is used externally</span>
+</span></span></code></pre></div><p>Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type &ldquo;_&rdquo; before the parameter name.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">greet</span> (<span style="color:#66d9ef">_</span> name: String, formal: Bool = <span style="color:#66d9ef">false</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> formal == <span style="color:#66d9ef">true</span> {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Hello, </span><span style="color:#e6db74">\(</span>name<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Hi! </span><span style="color:#e6db74">\(</span>name<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>greet(<span style="color:#e6db74">&#34;Trump&#34;</span>) <span style="color:#75715e">// Hello, Trump</span>
+</span></span><span style="display:flex;"><span>greet(<span style="color:#e6db74">&#34;Taylor&#34;</span>) <span style="color:#75715e">// Hi! Taylor</span>
+</span></span></code></pre></div><p>The <strong>return</strong> keyword can be removed if a closure or function has only one line of code to make them easier to read.</p>
+<h2 id="closureshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageclosures"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures">Closures</a><a hidden class="anchor" aria-hidden="true" href="#closureshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageclosures">#</a></h2>
+<p>You can assign functionality directly to a constant or variable. The assigned constant or variable is a closure which can be called like a function. You can also pass parameters to closures by placing them into braces. The <strong>in</strong> keyword marks the segment with parameters and body. Everything after <strong>in</strong> is the main body of closure itself.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> sayHello = { (name: String) -&gt; String <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Hi, </span><span style="color:#e6db74">\(</span>name<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>sayHello(<span style="color:#e6db74">&#34;Taylor&#34;</span>) <span style="color:#75715e">// Hi, Taylor</span>
+</span></span></code></pre></div><p>You can also directly use the closure like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> team = [<span style="color:#e6db74">&#34;Gloria&#34;</span>, <span style="color:#e6db74">&#34;Suzanne&#34;</span>, <span style="color:#e6db74">&#34;Tiffany&#34;</span>, <span style="color:#e6db74">&#34;Tasha&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> onlyT = team.filter({ (name: String) -&gt; Bool <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> name.hasPrefix(<span style="color:#e6db74">&#34;T&#34;</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// or you can even write your code in a more easire way</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> onlyT = team.filter { name <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    name.hasPrefix(<span style="color:#e6db74">&#34;T&#34;</span>) <span style="color:#75715e">// the return keyword can be removed</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// or go further by writing like this</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> onlyT = team.filter { $0.hasPrefix(<span style="color:#e6db74">&#34;T&#34;</span>) }
+</span></span><span style="display:flex;"><span>print(onlyT) <span style="color:#75715e">// [&#34;Tiffany&#34;, &#34;Tasha&#34;]</span>
+</span></span></code></pre></div><h2 id="structshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageclassesandstructures"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures">Structs</a><a hidden class="anchor" aria-hidden="true" href="#structshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageclassesandstructures">#</a></h2>
+<p>Structs let us make our own data types. Structs can have constants, variables, and functions. If you want a struct method to change one of its properties, you must mark it as <strong>mutating</strong>. For example,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Album</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> title: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> artist: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> isReleased: Bool = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">printSummary</span>() {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>title<span style="color:#e6db74">)</span><span style="color:#e6db74"> by </span><span style="color:#e6db74">\(</span>artist<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">mutating</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">removeFromSale</span>() {
+</span></span><span style="display:flex;"><span>        isReleased = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> red = Album(title: <span style="color:#e6db74">&#34;Red&#34;</span>, artist: <span style="color:#e6db74">&#34;Taylor Swift&#34;</span>)
+</span></span></code></pre></div><p>Computed properties are variables computed at each call dynamically. You can also explicitly define the get and set method for the variable. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Employee</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> vacationAllowed = <span style="color:#ae81ff">14</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> vacationTaken = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> vacationRemaining = Int {
+</span></span><span style="display:flex;"><span>        vacationAllowed <span style="color:#f92672">-</span> vacationTaken
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> vacationRemaining = Int { <span style="color:#75715e">// another version</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">get</span> {
+</span></span><span style="display:flex;"><span>            vacationAllowed <span style="color:#f92672">-</span> vacationTaken
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">set</span> {
+</span></span><span style="display:flex;"><span>            vacationAllowed = vacationAllowed <span style="color:#f92672">+</span> newValue
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the set method, the <strong>newValue</strong> provided by Swift stores whatever value the user was trying to assign to this property.</p>
+<p>Property observers are pieces of code that run when a property changes. <strong>didSet</strong> is called after the change has taken place. <strong>willSet</strong> is called before the change has taken place. For example,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Game</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> score = <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">didSet</span> {
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Score is now </span><span style="color:#e6db74">\(</span>score<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Initializers</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Player</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> name: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> number: Int
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">init</span>(name: String) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span>.name = name
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span>.number = Int.random(<span style="color:#66d9ef">in</span>: <span style="color:#ae81ff">1.</span>..<span style="color:#ae81ff">99</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="classeshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageclassesandstructures"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/">Classes</a><a hidden class="anchor" aria-hidden="true" href="#classeshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageclassesandstructures">#</a></h2>
+<blockquote>
+<p>Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.</p>
+</blockquote>
+<p>Classes let you create customized data types like structs, but are different from structs primarily in 6 key ways:</p>
+<ul>
+<li>Classes can be built upon or inherit characteristics from another class.</li>
+<li>Type casting enables you to check and interpret the type of a class instance at runtime.</li>
+<li>All structures have an automatically generated memberwise initializer, but classes do not. Unlike structures, class instances don’t receive a default memberwise initializer.</li>
+<li>All copies of a class share one particular set of data. That is, the copies are references to a single one rather than new instances.</li>
+<li>Classes can have a de-initializer using the keword <strong>deinit</strong> if needed.</li>
+<li>Classes let you change variable properties even in the class instance itself is constant (defined by the keyword <strong>let</strong>).</li>
+</ul>
+<p>If a child class wants to change the method it inherit from the parent class, the keyword <strong>override</strong> is used.</p>
+<h2 id="access-controlhttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageaccesscontrol"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/">Access Control</a><a hidden class="anchor" aria-hidden="true" href="#access-controlhttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageaccesscontrol">#</a></h2>
+<p>There are 4 most common access control options:</p>
+<ul>
+<li><strong>private</strong>: Let nothing outside this struct read or write it.</li>
+<li><strong>private(set)</strong>: Something outside can read it, but only something inside can write it.</li>
+<li><strong>fileprivate</strong>: Anything inside the file can read and write it.</li>
+<li><strong>public</strong>: Anything can read and write it.</li>
+</ul>
+<h2 id="protocolshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageprotocols"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols">Protocols</a><a hidden class="anchor" aria-hidden="true" href="#protocolshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageprotocols">#</a></h2>
+<p>Protocols define functionality that we expect other types to support. I think it is similar to <em>interface</em> in Java and <em>virtual function</em> in C++, even though there are differences. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">protocol</span> <span style="color:#a6e22e">Vehicle</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> name: String { <span style="color:#66d9ef">get</span> }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> currentPassengers: Int { <span style="color:#66d9ef">get</span> <span style="color:#66d9ef">set</span> }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">travel</span>(distance: Int)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Car</span>: Vehicle {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> name = <span style="color:#e6db74">&#34;Car&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> currentPassengers = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">travel</span>(distance: Int) {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;The car drives </span><span style="color:#e6db74">\(</span>distance<span style="color:#e6db74">)</span><span style="color:#e6db74">km.&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="extensionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageextensions"><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions">Extensions</a><a hidden class="anchor" aria-hidden="true" href="#extensionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languageextensions">#</a></h2>
+<p>Extensions let you add new functionality to any type. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">String</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">trimmed</span>() -&gt; String {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span>.trimmingCharacters(<span style="color:#66d9ef">in</span>: .whitespacesAndNewlines)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">mutating</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">trimmed</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span> = <span style="color:#66d9ef">self</span>.trimmed()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> lines: [String] {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span>.components(seperatedBy: .newlines)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> lyrics = <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">I keep cruising
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Can&#39;t stop, won&#39;t stop moving
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>print(lyrics.lines.count) <span style="color:#75715e">// 2</span>
+</span></span></code></pre></div><p>Extension protocols add new functionality to a whole protocol. So any type conforming to the protocol gets access to them. For example, arraies, dictionaries, and sets all conform to a protocol called <em>Collection</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">extension</span> <span style="color:#a6e22e">Collection</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> isNotEmpty: Bool {
+</span></span><span style="display:flex;"><span>        isEmpty == <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> guests = [<span style="color:#e6db74">&#34;Mario&#34;</span>, <span style="color:#e6db74">&#34;Luigi&#34;</span>]
+</span></span><span style="display:flex;"><span>print(guests.isNotEmpty) <span style="color:#75715e">// true</span>
+</span></span></code></pre></div><h2 id="optional">Optional<a hidden class="anchor" aria-hidden="true" href="#optional">#</a></h2>
+<p>Swift introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”.</p>
+<p>To write an optional type, you write a question mark (?) after the name of the type that the optional contains — for example, the type of an optional Int is Int?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#75715e">// serverResponseCode contains an actual Int value of 404</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> serverResponseCode: Int? = <span style="color:#ae81ff">404</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// serverResponseCode now contains no value</span>
+</span></span><span style="display:flex;"><span>serverResponseCode = <span style="color:#66d9ef">nil</span>
+</span></span></code></pre></div><p>Optional chaining is a process for querying and calling properties, methods, and subscripts on an optional that might currently be nil. If the optional contains a value, the property, method, or subscript call succeeds; if the optional is nil, the property, method, or subscript call returns nil. Multiple queries can be chained together, and the entire chain fails gracefully if any link in the chain is nil.</p>
+<p>If you create a new Person instance, its residence property is default initialized to nil, by virtue of being optional. In the code below, john has a residence property value of nil:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> residence: Residence?
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Residence</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> numberOfRooms = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> john = Person()
+</span></span></code></pre></div><p>If you try to access the numberOfRooms property of this person’s residence, by placing an exclamation point after residence to force the unwrapping of its value, you trigger a runtime error, because there’s no residence value to unwrap:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#75715e">// this triggers a runtime error</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> roomCount = john.residence!.numberOfRooms 
+</span></span></code></pre></div><p>Optional chaining provides an alternative way to access the value of numberOfRooms. To use optional chaining, use a question mark. This tells Swift to “chain” on the optional residence property and to retrieve the value of numberOfRooms if residence exists.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> roomCount = john.residence?.numberOfRooms {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;John&#39;s residence has </span><span style="color:#e6db74">\(</span>roomCount<span style="color:#e6db74">)</span><span style="color:#e6db74"> room(s).&#34;</span>)
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Unable to retrieve the number of rooms.&#34;</span>)
+</span></span><span style="display:flex;"><span>} <span style="color:#75715e">// Prints &#34;Unable to retrieve the number of rooms.&#34;</span>
+</span></span></code></pre></div><p>You can also use <em>guard let</em>. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">printSquire</span>(of number: Int?) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> number = number <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;number is nil&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\(</span>number<span style="color:#e6db74">)</span><span style="color:#e6db74"> x </span><span style="color:#e6db74">\(</span>number<span style="color:#e6db74">)</span><span style="color:#e6db74"> is </span><span style="color:#e6db74">\(</span>number <span style="color:#f92672">*</span> number<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You can use the <em>nil coalescing</em> operator (??) to unwrap the optional. If the optional is empty, <em>nil coalescing</em> lets you to provide a default value. For example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tvShows = []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> curShow = tvShows.randomElement() ?? <span style="color:#e6db74">&#34;None&#34;</span> <span style="color:#75715e">// None</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> number = Int(<span style="color:#e6db74">&#34;&#34;</span>) ?? <span style="color:#ae81ff">0</span> <span style="color:#75715e">// 0</span>
+</span></span></code></pre></div><p>You can use <em>optional try</em> by adding (?) after the keyword <strong>try</strong>. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Swift" data-lang="Swift"><span style="display:flex;"><span><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">UserError</span>: Error {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> badID, networkFailed
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">getUser</span>(id: Int) <span style="color:#66d9ef">throws</span> -&gt; String {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throw</span> UserError.networkFailed
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> user = <span style="color:#66d9ef">try</span>? getUser(id: <span style="color:#ae81ff">23</span>) {
+</span></span><span style="display:flex;"><span>    print(user)
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Wrong&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://allinleeyl.github.io/homepage/">Allin Lee&#39;s Home</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

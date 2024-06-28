@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-28T18:12:15+08:00</lastmod>
+    <loc>https://allinleeyl.github.io/homepage/</loc>
+    <lastmod>2024-10-27T23:13:18+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-06-28T18:12:15+08:00</lastmod>
+    <loc>https://allinleeyl.github.io/homepage/posts/</loc>
+    <lastmod>2024-10-27T23:13:18+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://allinleeyl.github.io/homepage/posts/swift/</loc>
+    <lastmod>2024-10-27T23:13:18+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://allinleeyl.github.io/homepage/posts/connect-mac-to-printer/</loc>
+    <lastmod>2024-10-22T21:37:52+08:00</lastmod>
+  </url><url>
+    <loc>https://allinleeyl.github.io/homepage/tags/network/</loc>
+    <lastmod>2024-10-22T21:37:52+08:00</lastmod>
+  </url><url>
+    <loc>https://allinleeyl.github.io/homepage/tags/</loc>
+    <lastmod>2024-10-22T21:37:52+08:00</lastmod>
+  </url><url>
+    <loc>https://allinleeyl.github.io/homepage/posts/c-development-experience/</loc>
+    <lastmod>2024-10-20T18:12:15+08:00</lastmod>
+  </url><url>
+    <loc>https://allinleeyl.github.io/homepage/tags/programming/</loc>
+    <lastmod>2024-10-20T18:12:15+08:00</lastmod>
+  </url><url>
+    <loc>https://allinleeyl.github.io/homepage/archives/</loc>
+  </url><url>
+    <loc>https://allinleeyl.github.io/homepage/categories/</loc>
   </url>
 </urlset>
