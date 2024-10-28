@@ -53,10 +53,10 @@ Normally, you can go to MacOS settings now. But I suggest you finish the steps b
 ## MacOS (Client) Settings
 
 1. Install the proper driver of the printer for your Mac.
-2. “Settings” -> “Printers & Scanners” -> “Add Printer, Scanner or Fax...”.
-3. Right click  any one of these “Default/IP/Windows” buttons. Select “Customize Toolbar” will appear. Then drag “Advanced” into the Toolbar, which will be used later.
-4. Select “Advanced” and select/fill as below:
-   - Type: “LPD/LPR Host or Printer”
-   - URL: `lpd://hostname/printername`. **This is important. You have to type in exactly the same hostname or computer name of the Windows PC providing network printer service and the printer name.** In my case, my URL is  `lpd://192.168.3.173/HP-LaserJet-Professional-M1136-MFP`.
+2. **Settings** > **Printers & Scanners** > **Add Printer, Scanner or Fax...**.
+3. Right click  any one of these **Default/IP/Windows** buttons. Select **Customize Toolbar** will appear. Then drag **Advanced** into the Toolbar, which will be used later.
+4. Select **Advanced** and select/fill as below:
+   - **Type**: “LPD/LPR Host or Printer”
+   - **URL**: `lpd://hostname/printername`. **This is important. You have to type in exactly the same hostname or computer name of the Windows PC providing network printer service and the printer name.** In my case, my URL is  `lpd://192.168.3.173/HP-LaserJet-Professional-M1136-MFP`.
    - Use: Select the proper driver
-5. Click the “Add” button.
+5. Click the **Add** button.

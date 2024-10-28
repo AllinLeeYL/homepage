@@ -12,7 +12,7 @@ title = "Hi!"
 description = "This is Allin Lee's homepage."
 defaultTheme = "auto"
 social = true
-ShowToc = true
+ShowToc = false
 hideSummary = false
 
 [params.taxonomies]
