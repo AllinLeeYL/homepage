@@ -6,16 +6,31 @@
     <description>Recent content on Allin Lee&#39;s Home</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2024 23:13:18 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2024 19:32:49 +0800</lastBuildDate>
     <atom:link href="https://allinleeyl.github.io/homepage/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Swift</title>
+      <title>How to Debug C/C&#43;&#43; Code in VScode</title>
+      <link>https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/</link>
+      <pubDate>Sun, 10 Nov 2024 19:32:49 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/</guid>
+      <description>&lt;h1 id=&#34;qa&#34;&gt;Q&amp;amp;A&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Why is my debugger stuck at retrieving local variables?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on MacOS, take a breath. This is not your problem. There are known bugs with regrad to debugging C/C++ code using VSCode, refer to &lt;a href=&#34;https://stackoverflow.com/questions/76461370/vs-code-c-cmake-project-debugging-info-and-breakpoints-not-working&#34;&gt;this answer&lt;/a&gt;. However, this answer&amp;rsquo;s solution does not work. Here&amp;rsquo;s the solution:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the &lt;strong&gt;lldb-dap&lt;/strong&gt;. The &lt;strong&gt;lldb-dap&lt;/strong&gt; binary is a command line tool that implements the &lt;a href=&#34;https://microsoft.github.io/debug-adapter-protocol/&#34;&gt;Debug Adapter Protocol&lt;/a&gt;. It&amp;rsquo;s a substitute for the &lt;strong&gt;lldb-mi&lt;/strong&gt; debugger for VSCode.&lt;/li&gt;
+&lt;li&gt;Install a extension named &lt;strong&gt;LLVM DAP&lt;/strong&gt; (extension ID: llvm-vs-code-extensions.lldb-dap).&lt;/li&gt;
+&lt;li&gt;Tell the &lt;strong&gt;LLVM DAP&lt;/strong&gt; extension the path to &lt;strong&gt;lldb-dap&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change the &lt;code&gt;&amp;quot;type&amp;quot;: &amp;quot;cppdbg&amp;quot;&lt;/code&gt; to &lt;code&gt;&amp;quot;type&amp;quot;: &amp;quot;lldb-dap&amp;quot;&lt;/code&gt; in your &lt;code&gt;.vscode/launch.json&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Enjoy it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Some Notes on Swift Grammar</title>
       <link>https://allinleeyl.github.io/homepage/posts/swift/</link>
       <pubDate>Sun, 27 Oct 2024 23:13:18 +0800</pubDate>
       <guid>https://allinleeyl.github.io/homepage/posts/swift/</guid>
-      <description>&lt;h1 id=&#34;some-notes-on-swift-grammar&#34;&gt;Some Notes on Swift Grammar&lt;/h1&gt;
-&lt;p&gt;This is a note from the Video &lt;a href=&#34;https://www.youtube.com/watch?v=n5X_V81OYnQ&amp;amp;t=1239s&#34;&gt;Learn the Essentials of Swift in one hour&lt;/a&gt;. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by &lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;functionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languagefunctions&#34;&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions&#34;&gt;Functions&lt;/a&gt;&lt;/h2&gt;
+      <description>&lt;p&gt;This is a note from the Video &lt;a href=&#34;https://www.youtube.com/watch?v=n5X_V81OYnQ&amp;amp;t=1239s&#34;&gt;Learn the Essentials of Swift in one hour&lt;/a&gt;. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by &lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;functionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languagefunctions&#34;&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions&#34;&gt;Functions&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Swift function parameters can have two names, one used externally and one used internally.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Swift&#34; data-lang=&#34;Swift&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printTimesTable&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; number: Int) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;..&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; {
@@ -26,12 +41,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type &amp;ldquo;_&amp;rdquo; before the parameter name.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Connect Mac to Printer</title>
+      <title>How to Connect Your Mac to Network Printer</title>
       <link>https://allinleeyl.github.io/homepage/posts/connect-mac-to-printer/</link>
       <pubDate>Tue, 22 Oct 2024 21:37:52 +0800</pubDate>
       <guid>https://allinleeyl.github.io/homepage/posts/connect-mac-to-printer/</guid>
-      <description>&lt;h1 id=&#34;how-to-connect-your-mac-to-network-printer&#34;&gt;How to Connect Your Mac to Network Printer&lt;/h1&gt;
-&lt;p&gt;If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.&lt;/p&gt;
+      <description>&lt;p&gt;If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.&lt;/p&gt;
 
 
 

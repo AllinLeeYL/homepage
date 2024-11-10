@@ -25,8 +25,13 @@ Title = "Allin's Home"
 Content = '''
 Kia ora, 👋
 
-I am on a MS program majoring in CS at UCAS.
-This is a place where I'd like to share my experience, and ideas.'''
+My name is Allin Lee. I am a CS student now. My hobby is finding new things and giving it a try constantly. 
+This is a place where I'd like to share my experience and ideas.
+
+🎓**MEng** Computer Technology, University of Chinese Academy of Sciences, 2022-Now
+
+🎓**BSc** Computer Science and Technology, Nankai University, 2018-2022
+'''
 
 [[params.socialIcons]]
 name = "github"

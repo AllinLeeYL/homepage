@@ -5,10 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Connect Mac to Printer | Allin Lee&#39;s Home</title>
-<meta name="keywords" content="network">
-<meta name="description" content="How to Connect Your Mac to Network Printer
-If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
+<title>How to Connect Your Mac to Network Printer | Allin Lee&#39;s Home</title>
+<meta name="keywords" content="how to">
+<meta name="description" content="If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
 
 
 
@@ -160,9 +159,8 @@ First, your Windows PC has to have the right access to the printer, normally inc
         }
 
     </style>
-</noscript><meta property="og:title" content="Connect Mac to Printer" />
-<meta property="og:description" content="How to Connect Your Mac to Network Printer
-If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
+</noscript><meta property="og:title" content="How to Connect Your Mac to Network Printer" />
+<meta property="og:description" content="If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
 
 
 
@@ -273,9 +271,8 @@ First, your Windows PC has to have the right access to the printer, normally inc
 <meta property="article:modified_time" content="2024-10-22T21:37:52+08:00" /><meta property="og:site_name" content="Hi!" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Connect Mac to Printer"/>
-<meta name="twitter:description" content="How to Connect Your Mac to Network Printer
-If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
+<meta name="twitter:title" content="How to Connect Your Mac to Network Printer"/>
+<meta name="twitter:description" content="If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
 
 
 
@@ -396,7 +393,7 @@ First, your Windows PC has to have the right access to the printer, normally inc
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Connect Mac to Printer",
+      "name": "How to Connect Your Mac to Network Printer",
       "item": "https://allinleeyl.github.io/homepage/posts/connect-mac-to-printer/"
     }
   ]
@@ -406,14 +403,14 @@ First, your Windows PC has to have the right access to the printer, normally inc
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Connect Mac to Printer",
-  "name": "Connect Mac to Printer",
-  "description": "How to Connect Your Mac to Network Printer If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.\nW i ( P n S r d e u i o r s n w v b t s e e r r P ) C I n - t I e n r t n e e r t n e W t i - n - d \u0026gt; o w s M a P c C Windows (Server) Settings First, your Windows PC has to have the right access to the printer, normally including installing the right driver and plugging a wire connecting your PC to the printer. Make sure that you can print using this Windows PC.\n",
+  "headline": "How to Connect Your Mac to Network Printer",
+  "name": "How to Connect Your Mac to Network Printer",
+  "description": "If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.\nW i ( P n S r d e u i o r s n w v b t s e e r r P ) C I n - t I e n r t n e e r t n e W t i - n - d \u0026gt; o w s M a P c C Windows (Server) Settings First, your Windows PC has to have the right access to the printer, normally including installing the right driver and plugging a wire connecting your PC to the printer. Make sure that you can print using this Windows PC.\n",
   "keywords": [
-    "network"
+    "how to"
   ],
-  "articleBody": "How to Connect Your Mac to Network Printer If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.\nW i ( P n S r d e u i o r s n w v b t s e e r r P ) C I n - t I e n r t n e e r t n e W t i - n - d \u003e o w s M a P c C Windows (Server) Settings First, your Windows PC has to have the right access to the printer, normally including installing the right driver and plugging a wire connecting your PC to the printer. Make sure that you can print using this Windows PC.\nBefore sharing your printer, please check if you have turned on some Windows features.\nIn the search box on the taskbar, type Control Panel and then select Control Panel. Select Programs \u003e Turn Windows features on or off. Find Print and Document Services and turn on Printer Server, LPD Print Service (and LPR Port Monitor if you want to connect this computer to a network printer provided by another computer). Note: If you can use another PC to print via this network printer, but not a Mac, the reason is that the “Line Printer Daemon (LPD)” feature is not turned on at the PC as the server.\nThen, you can share this printer:\nSelect the Start button, then select Settings \u003e Devices \u003e Printers \u0026 scanners. Choose the printer you want to share, then select Manage. Select Printer Properties, then choose the Sharing tab. On the Sharing tab, select Share this printer. If you want, edit the Share name of the printer. You’ll use this name to connect to the printer from your Mac or a secondary PC. When you are done, select OK. Normally, you can go to MacOS settings now. But I suggest you finish the steps below to make sure your firewall lets through printer sharing.\nSelect the Start button, then select Settings \u003e Network \u0026 Internet \u003e Wi-Fi. Under Related settings, select Change advanced sharing options. In the Advanced sharing settings dialog box, expand the Private section. Next, under Network discovery, select Turn on network discovery. Under File and printer sharing, select Turn on file and printer sharing. MacOS (Client) Settings Install the proper driver of the printer for your Mac. Settings \u003e Printers \u0026 Scanners \u003e Add Printer, Scanner or Fax…. Right click any one of these Default/IP/Windows buttons. Select Customize Toolbar will appear. Then drag Advanced into the Toolbar, which will be used later. Select Advanced and select/fill as below: Type: “LPD/LPR Host or Printer” URL: lpd://hostname/printername. This is important. You have to type in exactly the same hostname or computer name of the Windows PC providing network printer service and the printer name. In my case, my URL is lpd://192.168.3.173/HP-LaserJet-Professional-M1136-MFP. Use: Select the proper driver Click the Add button. ",
-  "wordCount" : "517",
+  "articleBody": "If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.\nW i ( P n S r d e u i o r s n w v b t s e e r r P ) C I n - t I e n r t n e e r t n e W t i - n - d \u003e o w s M a P c C Windows (Server) Settings First, your Windows PC has to have the right access to the printer, normally including installing the right driver and plugging a wire connecting your PC to the printer. Make sure that you can print using this Windows PC.\nBefore sharing your printer, please check if you have turned on some Windows features.\nIn the search box on the taskbar, type Control Panel and then select Control Panel. Select Programs \u003e Turn Windows features on or off. Find Print and Document Services and turn on Printer Server, LPD Print Service (and LPR Port Monitor if you want to connect this computer to a network printer provided by another computer). Note: If you can use another PC to print via this network printer, but not a Mac, the reason is that the “Line Printer Daemon (LPD)” feature is not turned on at the PC as the server.\nThen, you can share this printer:\nSelect the Start button, then select Settings \u003e Devices \u003e Printers \u0026 scanners. Choose the printer you want to share, then select Manage. Select Printer Properties, then choose the Sharing tab. On the Sharing tab, select Share this printer. If you want, edit the Share name of the printer. You’ll use this name to connect to the printer from your Mac or a secondary PC. When you are done, select OK. Normally, you can go to MacOS settings now. But I suggest you finish the steps below to make sure your firewall lets through printer sharing.\nSelect the Start button, then select Settings \u003e Network \u0026 Internet \u003e Wi-Fi. Under Related settings, select Change advanced sharing options. In the Advanced sharing settings dialog box, expand the Private section. Next, under Network discovery, select Turn on network discovery. Under File and printer sharing, select Turn on file and printer sharing. MacOS (Client) Settings Install the proper driver of the printer for your Mac. Settings \u003e Printers \u0026 Scanners \u003e Add Printer, Scanner or Fax…. Right click any one of these Default/IP/Windows buttons. Select Customize Toolbar will appear. Then drag Advanced into the Toolbar, which will be used later. Select Advanced and select/fill as below: Type: “LPD/LPR Host or Printer” URL: lpd://hostname/printername. This is important. You have to type in exactly the same hostname or computer name of the Windows PC providing network printer service and the printer name. In my case, my URL is lpd://192.168.3.173/HP-LaserJet-Professional-M1136-MFP. Use: Select the proper driver Click the Add button. ",
+  "wordCount" : "509",
   "inLanguage": "en",
   "datePublished": "2024-10-22T21:37:52+08:00",
   "dateModified": "2024-10-22T21:37:52+08:00",
@@ -492,14 +489,13 @@ First, your Windows PC has to have the right access to the printer, normally inc
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Connect Mac to Printer
+      How to Connect Your Mac to Network Printer
     </h1>
     <div class="post-meta"><span title='2024-10-22 21:37:52 +0800 CST'>October 22, 2024</span>
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="how-to-connect-your-mac-to-network-printer">How to Connect Your Mac to Network Printer<a hidden class="anchor" aria-hidden="true" href="#how-to-connect-your-mac-to-network-printer">#</a></h1>
-<p>If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.</p>
+  <div class="post-content"><p>If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.</p>
 
 
 
@@ -651,7 +647,7 @@ First, your Windows PC has to have the right access to the printer, normally inc
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://allinleeyl.github.io/homepage/tags/network/">Network</a></li>
+      <li><a href="https://allinleeyl.github.io/homepage/tags/how-to/">How To</a></li>
     </ul>
   </footer>
 </article>

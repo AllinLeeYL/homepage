@@ -6,8 +6,24 @@
     <description>Recent content in Programming on Allin Lee&#39;s Home</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Oct 2024 18:12:15 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2024 19:32:49 +0800</lastBuildDate>
     <atom:link href="https://allinleeyl.github.io/homepage/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Debug C/C&#43;&#43; Code in VScode</title>
+      <link>https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/</link>
+      <pubDate>Sun, 10 Nov 2024 19:32:49 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/</guid>
+      <description>&lt;h1 id=&#34;qa&#34;&gt;Q&amp;amp;A&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Why is my debugger stuck at retrieving local variables?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on MacOS, take a breath. This is not your problem. There are known bugs with regrad to debugging C/C++ code using VSCode, refer to &lt;a href=&#34;https://stackoverflow.com/questions/76461370/vs-code-c-cmake-project-debugging-info-and-breakpoints-not-working&#34;&gt;this answer&lt;/a&gt;. However, this answer&amp;rsquo;s solution does not work. Here&amp;rsquo;s the solution:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the &lt;strong&gt;lldb-dap&lt;/strong&gt;. The &lt;strong&gt;lldb-dap&lt;/strong&gt; binary is a command line tool that implements the &lt;a href=&#34;https://microsoft.github.io/debug-adapter-protocol/&#34;&gt;Debug Adapter Protocol&lt;/a&gt;. It&amp;rsquo;s a substitute for the &lt;strong&gt;lldb-mi&lt;/strong&gt; debugger for VSCode.&lt;/li&gt;
+&lt;li&gt;Install a extension named &lt;strong&gt;LLVM DAP&lt;/strong&gt; (extension ID: llvm-vs-code-extensions.lldb-dap).&lt;/li&gt;
+&lt;li&gt;Tell the &lt;strong&gt;LLVM DAP&lt;/strong&gt; extension the path to &lt;strong&gt;lldb-dap&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Change the &lt;code&gt;&amp;quot;type&amp;quot;: &amp;quot;cppdbg&amp;quot;&lt;/code&gt; to &lt;code&gt;&amp;quot;type&amp;quot;: &amp;quot;lldb-dap&amp;quot;&lt;/code&gt; in your &lt;code&gt;.vscode/launch.json&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Enjoy it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>C/C&#43;&#43; Development Experience</title>
       <link>https://allinleeyl.github.io/homepage/posts/c-development-experience/</link>

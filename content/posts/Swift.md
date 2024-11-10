@@ -1,14 +1,12 @@
 +++
-title = 'Swift'
+title = 'Some Notes on Swift Grammar'
 date = 2024-10-27T23:13:18+08:00
 draft = false
 +++
 
-# Some Notes on Swift Grammar
-
 This is a note from the Video [Learn the Essentials of Swift in one hour](https://www.youtube.com/watch?v=n5X_V81OYnQ&t=1239s). It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by [this site](https://docs.swift.org/swift-book/documentation/the-swift-programming-language). 
 
-## [Functions](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions)
+# [Functions](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions)
 
 Swift function parameters can have two names, one used externally and one used internally.
 
@@ -37,7 +35,7 @@ greet("Taylor") // Hi! Taylor
 
 The **return** keyword can be removed if a closure or function has only one line of code to make them easier to read.
 
-## [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
+# [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
 
 You can assign functionality directly to a constant or variable. The assigned constant or variable is a closure which can be called like a function. You can also pass parameters to closures by placing them into braces. The **in** keyword marks the segment with parameters and body. Everything after **in** is the main body of closure itself.
 
@@ -64,7 +62,7 @@ let onlyT = team.filter { $0.hasPrefix("T") }
 print(onlyT) // ["Tiffany", "Tasha"]
 ```
 
-## [Structs](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
+# [Structs](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
 
 Structs let us make our own data types. Structs can have constants, variables, and functions. If you want a struct method to change one of its properties, you must mark it as **mutating**. For example,
 
@@ -130,7 +128,7 @@ struct Player {
 }
 ```
 
-## [Classes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/)
+# [Classes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/)
 
 > Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.
 
@@ -145,7 +143,7 @@ Classes let you create customized data types like structs, but are different fro
 
 If a child class wants to change the method it inherit from the parent class, the keyword **override** is used. 
 
-## [Access Control](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/)
+# [Access Control](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/)
 
 There are 4 most common access control options:
 
@@ -154,7 +152,7 @@ There are 4 most common access control options:
 * **fileprivate**: Anything inside the file can read and write it.
 * **public**: Anything can read and write it.
 
-## [Protocols](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols)
+# [Protocols](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols)
 
 Protocols define functionality that we expect other types to support. I think it is similar to *interface* in Java and *virtual function* in C++, even though there are differences. For example: 
 
@@ -174,7 +172,7 @@ struct Car: Vehicle {
 }
 ```
 
-## [Extensions](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions)
+# [Extensions](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions)
 
 Extensions let you add new functionality to any type. For example:
 
@@ -209,7 +207,7 @@ let guests = ["Mario", "Luigi"]
 print(guests.isNotEmpty) // true
 ```
 
-## Optional
+# Optional
 
 Swift introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”.
 

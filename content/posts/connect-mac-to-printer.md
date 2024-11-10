@@ -1,11 +1,9 @@
 +++
-title = 'Connect Mac to Printer'
+title = 'How to Connect Your Mac to Network Printer'
 date = 2024-10-22T21:37:52+08:00
 draft = false
-tags = ["network"]
+tags = ["how to"]
 +++
-
-# How to Connect Your Mac to Network Printer
 
 If you have a network printer shared by your Windows PC and want to connect your Mac to it (just like below), this post is perfect for you. You will need to make some configurations for your Windows PC and Mac separately.
 
