@@ -4,10 +4,43 @@
     <title>Programming on Allin Lee&#39;s Home</title>
     <link>https://allinleeyl.github.io/homepage/tags/programming/</link>
     <description>Recent content in Programming on Allin Lee&#39;s Home</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.139.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2024 19:32:49 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2025 18:56:07 +0800</lastBuildDate>
     <atom:link href="https://allinleeyl.github.io/homepage/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Usage Notes</title>
+      <link>https://allinleeyl.github.io/homepage/posts/git/</link>
+      <pubDate>Thu, 02 Jan 2025 18:56:07 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/posts/git/</guid>
+      <description>&lt;h1 id=&#34;some-fancy-commands&#34;&gt;Some Fancy Commands&lt;/h1&gt;
+&lt;p&gt;Use a more fancy command &lt;code&gt;git lg&lt;/code&gt; to substitute the &lt;code&gt;git log&lt;/code&gt; by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global alias.lg &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;log --graph --pretty=format:&amp;#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#39; --abbrev-commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;how-to-deletesquash-commits&#34;&gt;How to Delete/Squash Commits&lt;/h1&gt;
+&lt;p&gt;For example I have 3 commits.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;* 0547d60 - (HEAD -&amp;gt; master) Add post &amp;#34;How to Debug C/C++ in VSCode.&amp;#34; (1 second ago) &amp;lt;Yilin Li&amp;gt;
+* bcc2c81 - Add workflow (19 seconds ago) &amp;lt;Yilin Li&amp;gt;
+* c437b88 - init (5 months ago) &amp;lt;Yilin Li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;git rebase -i HEAD~3&lt;/code&gt; to enter an interactive mode.&lt;/li&gt;
+&lt;li&gt;You can see the contents like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;pick bcc2c81 Add workflow
+pick 0547d60 Add post &amp;#34;How to Debug C/C++ in VSCode&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Modify the content:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;pick bcc2c81 Add workflow
+squash 0547d60 Add post &amp;#34;How to Debug C/C++ in VSCode&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Apply the changes by saving the modifications. You get a clean git log like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;* bcc2c81 - (HEAD -&amp;gt; master) Add workflow (19 seconds ago) &amp;lt;Yilin Li&amp;gt;
+* c437b88 - init (5 months ago) &amp;lt;Yilin Li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Use &lt;code&gt;git push --force&lt;/code&gt; to override remote content.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     <item>
       <title>How to Debug C/C&#43;&#43; Code in VScode</title>
       <link>https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/</link>

@@ -4,10 +4,24 @@
     <title>Tags on Allin Lee&#39;s Home</title>
     <link>https://allinleeyl.github.io/homepage/tags/</link>
     <description>Recent content in Tags on Allin Lee&#39;s Home</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.139.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2024 19:32:49 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2025 18:56:07 +0800</lastBuildDate>
     <atom:link href="https://allinleeyl.github.io/homepage/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming</title>
+      <link>https://allinleeyl.github.io/homepage/tags/programming/</link>
+      <pubDate>Thu, 02 Jan 2025 18:56:07 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming Languages</title>
+      <link>https://allinleeyl.github.io/homepage/tags/programming-languages/</link>
+      <pubDate>Thu, 02 Jan 2025 18:49:04 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/tags/programming-languages/</guid>
+      <description></description>
+    </item>
     <item>
       <title>How To</title>
       <link>https://allinleeyl.github.io/homepage/tags/how-to/</link>
@@ -16,10 +30,10 @@
       <description></description>
     </item>
     <item>
-      <title>Programming</title>
-      <link>https://allinleeyl.github.io/homepage/tags/programming/</link>
-      <pubDate>Sun, 10 Nov 2024 19:32:49 +0800</pubDate>
-      <guid>https://allinleeyl.github.io/homepage/tags/programming/</guid>
+      <title>Programming Language</title>
+      <link>https://allinleeyl.github.io/homepage/tags/programming-language/</link>
+      <pubDate>Sun, 27 Oct 2024 23:13:18 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/tags/programming-language/</guid>
       <description></description>
     </item>
   </channel>

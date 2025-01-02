@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Some Notes on Swift Grammar | Allin Lee&#39;s Home</title>
-<meta name="keywords" content="">
+<title>Swift Language Notes | Allin Lee&#39;s Home</title>
+<meta name="keywords" content="programming language">
 <meta name="description" content="This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.
 Functions
 Swift function parameters can have two names, one used externally and one used internally.
@@ -64,7 +64,7 @@ Swift can also have positional parameters so the parameter name will not show in
         }
 
     </style>
-</noscript><meta property="og:title" content="Some Notes on Swift Grammar" />
+</noscript><meta property="og:title" content="Swift Language Notes" />
 <meta property="og:description" content="This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.
 Functions
 Swift function parameters can have two names, one used externally and one used internally.
@@ -81,7 +81,7 @@ Swift can also have positional parameters so the parameter name will not show in
 <meta property="article:modified_time" content="2024-10-27T23:13:18+08:00" /><meta property="og:site_name" content="Hi!" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Some Notes on Swift Grammar"/>
+<meta name="twitter:title" content="Swift Language Notes"/>
 <meta name="twitter:description" content="This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.
 Functions
 Swift function parameters can have two names, one used externally and one used internally.
@@ -108,7 +108,7 @@ Swift can also have positional parameters so the parameter name will not show in
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Some Notes on Swift Grammar",
+      "name": "Swift Language Notes",
       "item": "https://allinleeyl.github.io/homepage/posts/swift/"
     }
   ]
@@ -118,11 +118,11 @@ Swift can also have positional parameters so the parameter name will not show in
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Some Notes on Swift Grammar",
-  "name": "Some Notes on Swift Grammar",
+  "headline": "Swift Language Notes",
+  "name": "Swift Language Notes",
   "description": "This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.\nFunctions Swift function parameters can have two names, one used externally and one used internally.\nfunc printTimesTable(for number: Int) { for i in 1...12 { print(\u0026#34;\\(i) x \\(number) = \\(i * number)\u0026#34;) } } printTimesTable(for: 5) // \u0026#34;for\u0026#34; is used externally Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type \u0026ldquo;_\u0026rdquo; before the parameter name.\n",
   "keywords": [
-    
+    "programming language"
   ],
   "articleBody": "This is a note from the Video Learn the Essentials of Swift in one hour. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by this site.\nFunctions Swift function parameters can have two names, one used externally and one used internally.\nfunc printTimesTable(for number: Int) { for i in 1...12 { print(\"\\(i) x \\(number) = \\(i * number)\") } } printTimesTable(for: 5) // \"for\" is used externally Swift can also have positional parameters so the parameter name will not show in the function call. To declare a positional parameter, just type “_” before the parameter name.\nfunc greet (_ name: String, formal: Bool = false) { if formal == true { print(\"Hello, \\(name)\") } else { print(\"Hi! \\(name)\") } } greet(\"Trump\") // Hello, Trump greet(\"Taylor\") // Hi! Taylor The return keyword can be removed if a closure or function has only one line of code to make them easier to read.\nClosures You can assign functionality directly to a constant or variable. The assigned constant or variable is a closure which can be called like a function. You can also pass parameters to closures by placing them into braces. The in keyword marks the segment with parameters and body. Everything after in is the main body of closure itself.\nlet sayHello = { (name: String) -\u003e String in \"Hi, \\(name)\" } sayHello(\"Taylor\") // Hi, Taylor You can also directly use the closure like this:\nlet team = [\"Gloria\", \"Suzanne\", \"Tiffany\", \"Tasha\"] let onlyT = team.filter({ (name: String) -\u003e Bool in return name.hasPrefix(\"T\") }) // or you can even write your code in a more easire way let onlyT = team.filter { name in name.hasPrefix(\"T\") // the return keyword can be removed } // or go further by writing like this let onlyT = team.filter { $0.hasPrefix(\"T\") } print(onlyT) // [\"Tiffany\", \"Tasha\"] Structs Structs let us make our own data types. Structs can have constants, variables, and functions. If you want a struct method to change one of its properties, you must mark it as mutating. For example,\nstruct Album { let title: String let artist: String let isReleased: Bool = true func printSummary() { print(\"\\(title) by \\(artist)\") } mutating func removeFromSale() { isReleased = false } } let red = Album(title: \"Red\", artist: \"Taylor Swift\") Computed properties are variables computed at each call dynamically. You can also explicitly define the get and set method for the variable. For example:\nstruct Employee { var vacationAllowed = 14 var vacationTaken = 0 var vacationRemaining = Int { vacationAllowed - vacationTaken } var vacationRemaining = Int { // another version get { vacationAllowed - vacationTaken } set { vacationAllowed = vacationAllowed + newValue } } } In the set method, the newValue provided by Swift stores whatever value the user was trying to assign to this property.\nProperty observers are pieces of code that run when a property changes. didSet is called after the change has taken place. willSet is called before the change has taken place. For example,\nstruct Game { var score = 0 { didSet { print(\"Score is now \\(score)\") } } } Initializers\nstruct Player { let name: String let number: Int init(name: String) { self.name = name self.number = Int.random(in: 1...99) } } Classes Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.\nClasses let you create customized data types like structs, but are different from structs primarily in 6 key ways:\nClasses can be built upon or inherit characteristics from another class. Type casting enables you to check and interpret the type of a class instance at runtime. All structures have an automatically generated memberwise initializer, but classes do not. Unlike structures, class instances don’t receive a default memberwise initializer. All copies of a class share one particular set of data. That is, the copies are references to a single one rather than new instances. Classes can have a de-initializer using the keword deinit if needed. Classes let you change variable properties even in the class instance itself is constant (defined by the keyword let). If a child class wants to change the method it inherit from the parent class, the keyword override is used.\nAccess Control There are 4 most common access control options:\nprivate: Let nothing outside this struct read or write it. private(set): Something outside can read it, but only something inside can write it. fileprivate: Anything inside the file can read and write it. public: Anything can read and write it. Protocols Protocols define functionality that we expect other types to support. I think it is similar to interface in Java and virtual function in C++, even though there are differences. For example:\nprotocol Vehicle { var name: String { get } var currentPassengers: Int { get set } func travel(distance: Int) } struct Car: Vehicle { let name = \"Car\" var currentPassengers = 2 func travel(distance: Int) { print(\"The car drives \\(distance)km.\") } } Extensions Extensions let you add new functionality to any type. For example:\nextension String { func trimmed() -\u003e String { self.trimmingCharacters(in: .whitespacesAndNewlines) } mutating func trimmed() { self = self.trimmed() } var lines: [String] { self.components(seperatedBy: .newlines) } } let lyrics = \"\"\" I keep cruising Can't stop, won't stop moving \"\"\" print(lyrics.lines.count) // 2 Extension protocols add new functionality to a whole protocol. So any type conforming to the protocol gets access to them. For example, arraies, dictionaries, and sets all conform to a protocol called Collection.\nextension Collection { var isNotEmpty: Bool { isEmpty == false } } let guests = [\"Mario\", \"Luigi\"] print(guests.isNotEmpty) // true Optional Swift introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”.\nTo write an optional type, you write a question mark (?) after the name of the type that the optional contains — for example, the type of an optional Int is Int?\n// serverResponseCode contains an actual Int value of 404 var serverResponseCode: Int? = 404 // serverResponseCode now contains no value serverResponseCode = nil Optional chaining is a process for querying and calling properties, methods, and subscripts on an optional that might currently be nil. If the optional contains a value, the property, method, or subscript call succeeds; if the optional is nil, the property, method, or subscript call returns nil. Multiple queries can be chained together, and the entire chain fails gracefully if any link in the chain is nil.\nIf you create a new Person instance, its residence property is default initialized to nil, by virtue of being optional. In the code below, john has a residence property value of nil:\nclass Person { var residence: Residence? } class Residence { var numberOfRooms = 1 } let john = Person() If you try to access the numberOfRooms property of this person’s residence, by placing an exclamation point after residence to force the unwrapping of its value, you trigger a runtime error, because there’s no residence value to unwrap:\n// this triggers a runtime error let roomCount = john.residence!.numberOfRooms Optional chaining provides an alternative way to access the value of numberOfRooms. To use optional chaining, use a question mark. This tells Swift to “chain” on the optional residence property and to retrieve the value of numberOfRooms if residence exists.\nif let roomCount = john.residence?.numberOfRooms { print(\"John's residence has \\(roomCount) room(s).\") } else { print(\"Unable to retrieve the number of rooms.\") } // Prints \"Unable to retrieve the number of rooms.\" You can also use guard let. For example:\nfunc printSquire(of number: Int?) { guard let number = number else { print(\"number is nil\") return } print(\"\\(number) x \\(number) is \\(number * number)\") } You can use the nil coalescing operator (??) to unwrap the optional. If the optional is empty, nil coalescing lets you to provide a default value. For example\nlet tvShows = [] let curShow = tvShows.randomElement() ?? \"None\" // None let number = Int(\"\") ?? 0 // 0 You can use optional try by adding (?) after the keyword try. For example:\nenum UserError: Error { case badID, networkFailed } func getUser(id: Int) throws -\u003e String { throw UserError.networkFailed } if let user = try? getUser(id: 23) { print(user) } else { print(\"Wrong\") } ",
   "wordCount" : "1420",
@@ -204,7 +204,7 @@ Swift can also have positional parameters so the parameter name will not show in
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Some Notes on Swift Grammar
+      Swift Language Notes
     </h1>
     <div class="post-meta"><span title='2024-10-27 23:13:18 +0800 CST'>October 27, 2024</span>
 
@@ -414,13 +414,14 @@ Swift can also have positional parameters so the parameter name will not show in
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://allinleeyl.github.io/homepage/tags/programming-language/">Programming Language</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://allinleeyl.github.io/homepage/">Allin Lee&#39;s Home</a></span> · 
+        <span>&copy; 2025 <a href="https://allinleeyl.github.io/homepage/">Allin Lee&#39;s Home</a></span> · 
 
     <span>
         Powered by

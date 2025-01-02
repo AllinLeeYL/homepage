@@ -144,6 +144,34 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Git Usage Notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Some Fancy Commands Use a more fancy command git lg to substitute the git log by:
+git config --global alias.lg &#34;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&#34; How to Delete/Squash Commits For example I have 3 commits.
+* 0547d60 - (HEAD -&gt; master) Add post &#34;How to Debug C/C&#43;&#43; in VSCode.&#34; (1 second ago) &lt;Yilin Li&gt; * bcc2c81 - Add workflow (19 seconds ago) &lt;Yilin Li&gt; * c437b88 - init (5 months ago) &lt;Yilin Li&gt; Use git rebase -i HEAD~3 to enter an interactive mode. You can see the contents like this: pick bcc2c81 Add workflow pick 0547d60 Add post &#34;How to Debug C/C&#43;&#43; in VSCode&#34; Modify the content: pick bcc2c81 Add workflow squash 0547d60 Add post &#34;How to Debug C/C&#43;&#43; in VSCode&#34; Apply the changes by saving the modifications. You get a clean git log like this: * bcc2c81 - (HEAD -&gt; master) Add workflow (19 seconds ago) &lt;Yilin Li&gt; * c437b88 - init (5 months ago) &lt;Yilin Li&gt; Use git push --force to override remote content. </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-02 18:56:07 +0800 CST'>January 2, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Git Usage Notes" href="https://allinleeyl.github.io/homepage/posts/git/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Javascript Language Notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Variables and Constants Keywords var and let can all define variables, but differ in scope. Generally speaking, var’s scope is bigger than let, and var is more versatile than let. You should always prefer let to define variables whenever possible. For more differences between var and let, refer to this post.
+A constant holds a value that doesn’t change. To declare a constant, you use the const keyword. When defining a constant, you need to initialize it with a value immediately. For example:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-02 18:49:04 +0800 CST'>January 2, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Javascript Language Notes" href="https://allinleeyl.github.io/homepage/posts/javascript/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to Debug C/C&#43;&#43; Code in VScode
     </h2>
   </header>
@@ -159,7 +187,7 @@ Install the lldb-dap. The lldb-dap binary is a command line tool that implements
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Some Notes on Swift Grammar
+    <h2 class="entry-hint-parent">Swift Language Notes
     </h2>
   </header>
   <div class="entry-content">
@@ -169,7 +197,7 @@ func printTimesTable(for number: Int) { for i in 1...12 { print(&#34;\(i) x \(nu
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-10-27 23:13:18 +0800 CST'>October 27, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Some Notes on Swift Grammar" href="https://allinleeyl.github.io/homepage/posts/swift/"></a>
+  <a class="entry-link" aria-label="post link to Swift Language Notes" href="https://allinleeyl.github.io/homepage/posts/swift/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -202,7 +230,7 @@ Checking if you forget to link some .c/.cpp files to your final target, if the s
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://allinleeyl.github.io/homepage/">Allin Lee&#39;s Home</a></span> · 
+        <span>&copy; 2025 <a href="https://allinleeyl.github.io/homepage/">Allin Lee&#39;s Home</a></span> · 
 
     <span>
         Powered by

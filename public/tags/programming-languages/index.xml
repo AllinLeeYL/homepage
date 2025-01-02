@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming Languages on Allin Lee&#39;s Home</title>
+    <link>https://allinleeyl.github.io/homepage/tags/programming-languages/</link>
+    <description>Recent content in Programming Languages on Allin Lee&#39;s Home</description>
+    <generator>Hugo -- 0.139.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2025 18:49:04 +0800</lastBuildDate>
+    <atom:link href="https://allinleeyl.github.io/homepage/tags/programming-languages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript Language Notes</title>
+      <link>https://allinleeyl.github.io/homepage/posts/javascript/</link>
+      <pubDate>Thu, 02 Jan 2025 18:49:04 +0800</pubDate>
+      <guid>https://allinleeyl.github.io/homepage/posts/javascript/</guid>
+      <description>&lt;h1 id=&#34;variables-and-constants&#34;&gt;Variables and Constants&lt;/h1&gt;
+&lt;p&gt;Keywords &lt;code&gt;var&lt;/code&gt; and &lt;code&gt;let&lt;/code&gt; can all define variables, but differ in scope. Generally speaking, &lt;code&gt;var&lt;/code&gt;&amp;rsquo;s scope is bigger than &lt;code&gt;let&lt;/code&gt;, and &lt;code&gt;var&lt;/code&gt; is more versatile than &lt;code&gt;let&lt;/code&gt;. You should always prefer &lt;code&gt;let&lt;/code&gt; to define variables whenever possible. For more differences between &lt;code&gt;var&lt;/code&gt; and &lt;code&gt;let&lt;/code&gt;, refer to &lt;a href=&#34;https://www.javascripttutorial.net/difference-between-var-and-let/&#34;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A constant holds a value that doesn’t change. To declare a constant, you use the &lt;code&gt;const&lt;/code&gt; keyword. When defining a constant, you need to initialize it with a value immediately. For example:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
