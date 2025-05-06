@@ -4,7 +4,7 @@
     <title>Posts on Allin Lee&#39;s Home</title>
     <link>https://allinleeyl.github.io/homepage/posts/</link>
     <description>Recent content in Posts on Allin Lee&#39;s Home</description>
-    <generator>Hugo -- 0.139.3</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jan 2025 18:56:07 +0800</lastBuildDate>
     <atom:link href="https://allinleeyl.github.io/homepage/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -72,7 +72,7 @@ squash 0547d60 Add post &amp;#34;How to Debug C/C++ in VSCode&amp;#34;
       <pubDate>Sun, 27 Oct 2024 23:13:18 +0800</pubDate>
       <guid>https://allinleeyl.github.io/homepage/posts/swift/</guid>
       <description>&lt;p&gt;This is a note from the Video &lt;a href=&#34;https://www.youtube.com/watch?v=n5X_V81OYnQ&amp;amp;t=1239s&#34;&gt;Learn the Essentials of Swift in one hour&lt;/a&gt;. It aims to conclude the most frequently used grammar and features and give some examples, rather than cover all the grammar listed by &lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;functionshttpsdocsswiftorgswift-bookdocumentationthe-swift-programming-languagefunctions&#34;&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions&#34;&gt;Functions&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;functions&#34;&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions&#34;&gt;Functions&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Swift function parameters can have two names, one used externally and one used internally.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Swift&#34; data-lang=&#34;Swift&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;printTimesTable&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; number: Int) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.&lt;/span&gt;..&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt; {

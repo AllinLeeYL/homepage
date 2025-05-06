@@ -23,6 +23,9 @@ series = "series"
 [params.homeInfoParams]
 Title = "Allin's Home"
 Content = '''
+This url is deprecated, please visit the new [link](https://allinleeyl.github.io/).
+
+
 Kia ora, 👋
 
 My name is Allin Lee. I am a CS student now. My hobby is finding new things and giving it a try constantly. 

@@ -36,7 +36,7 @@ Use git push --force to override remote content.
 ">
 <meta name="author" content="">
 <link rel="canonical" href="https://allinleeyl.github.io/homepage/posts/git/">
-<link crossorigin="anonymous" href="/homepage/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/homepage/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://allinleeyl.github.io/homepage/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://allinleeyl.github.io/homepage/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://allinleeyl.github.io/homepage/favicon-32x32.png">
@@ -81,41 +81,20 @@ Use git push --force to override remote content.
         }
 
     </style>
-</noscript><meta property="og:title" content="Git Usage Notes" />
-<meta property="og:description" content="Some Fancy Commands
-Use a more fancy command git lg to substitute the git log by:
-git config --global alias.lg &#34;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&#34;
-How to Delete/Squash Commits
-For example I have 3 commits.
-* 0547d60 - (HEAD -&gt; master) Add post &#34;How to Debug C/C&#43;&#43; in VSCode.&#34; (1 second ago) &lt;Yilin Li&gt;
-* bcc2c81 - Add workflow (19 seconds ago) &lt;Yilin Li&gt;
-* c437b88 - init (5 months ago) &lt;Yilin Li&gt;
-
-Use git rebase -i HEAD~3 to enter an interactive mode.
-You can see the contents like this:
-
-pick bcc2c81 Add workflow
-pick 0547d60 Add post &#34;How to Debug C/C&#43;&#43; in VSCode&#34;
-
-Modify the content:
-
-pick bcc2c81 Add workflow
-squash 0547d60 Add post &#34;How to Debug C/C&#43;&#43; in VSCode&#34;
-
-Apply the changes by saving the modifications. You get a clean git log like this:
-
-* bcc2c81 - (HEAD -&gt; master) Add workflow (19 seconds ago) &lt;Yilin Li&gt;
-* c437b88 - init (5 months ago) &lt;Yilin Li&gt;
-
-Use git push --force to override remote content.
-" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://allinleeyl.github.io/homepage/posts/git/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-01-02T18:56:07+08:00" />
-<meta property="article:modified_time" content="2025-01-02T18:56:07+08:00" /><meta property="og:site_name" content="Hi!" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git Usage Notes"/>
+</noscript><meta property="og:url" content="https://allinleeyl.github.io/homepage/posts/git/">
+  <meta property="og:site_name" content="Allin Lee&#39;s Home">
+  <meta property="og:title" content="Git Usage Notes">
+  <meta property="og:description" content="Some Fancy Commands Use a more fancy command git lg to substitute the git log by:
+git config --global alias.lg &#34;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&#34; How to Delete/Squash Commits For example I have 3 commits.
+* 0547d60 - (HEAD -&gt; master) Add post &#34;How to Debug C/C&#43;&#43; in VSCode.&#34; (1 second ago) &lt;Yilin Li&gt; * bcc2c81 - Add workflow (19 seconds ago) &lt;Yilin Li&gt; * c437b88 - init (5 months ago) &lt;Yilin Li&gt; Use git rebase -i HEAD~3 to enter an interactive mode. You can see the contents like this: pick bcc2c81 Add workflow pick 0547d60 Add post &#34;How to Debug C/C&#43;&#43; in VSCode&#34; Modify the content: pick bcc2c81 Add workflow squash 0547d60 Add post &#34;How to Debug C/C&#43;&#43; in VSCode&#34; Apply the changes by saving the modifications. You get a clean git log like this: * bcc2c81 - (HEAD -&gt; master) Add workflow (19 seconds ago) &lt;Yilin Li&gt; * c437b88 - init (5 months ago) &lt;Yilin Li&gt; Use git push --force to override remote content. ">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-02T18:56:07+08:00">
+    <meta property="article:modified_time" content="2025-01-02T18:56:07+08:00">
+    <meta property="article:tag" content="Programming">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git Usage Notes">
 <meta name="twitter:description" content="Some Fancy Commands
 Use a more fancy command git lg to substitute the git log by:
 git config --global alias.lg &#34;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&#34;
@@ -142,7 +121,7 @@ Apply the changes by saving the modifications. You get a clean git log like this
 * c437b88 - init (5 months ago) &lt;Yilin Li&gt;
 
 Use git push --force to override remote content.
-"/>
+">
 
 
 <script type="application/ld+json">
@@ -213,7 +192,7 @@ Use git push --force to override remote content.
         <div class="logo">
             <a href="https://allinleeyl.github.io/homepage/" accesskey="h" title="Allin Lee&#39;s Home (Alt + H)">Allin Lee&#39;s Home</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">

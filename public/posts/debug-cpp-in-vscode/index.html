@@ -19,7 +19,7 @@ Change the &quot;type&quot;: &quot;cppdbg&quot; to &quot;type&quot;: &quot;lldb-
 Enjoy it.">
 <meta name="author" content="">
 <link rel="canonical" href="https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/">
-<link crossorigin="anonymous" href="/homepage/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/homepage/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://allinleeyl.github.io/homepage/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://allinleeyl.github.io/homepage/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://allinleeyl.github.io/homepage/favicon-32x32.png">
@@ -64,24 +64,21 @@ Enjoy it.">
         }
 
     </style>
-</noscript><meta property="og:title" content="How to Debug C/C&#43;&#43; Code in VScode" />
-<meta property="og:description" content="Q&amp;A
-Why is my debugger stuck at retrieving local variables?
-If you&rsquo;re on MacOS, take a breath. This is not your problem. There are known bugs with regrad to debugging C/C&#43;&#43; code using VSCode, refer to this answer. However, this answer&rsquo;s solution does not work. Here&rsquo;s the solution:
-
-Install the lldb-dap. The lldb-dap binary is a command line tool that implements the Debug Adapter Protocol. It&rsquo;s a substitute for the lldb-mi debugger for VSCode.
-Install a extension named LLVM DAP (extension ID: llvm-vs-code-extensions.lldb-dap).
-Tell the LLVM DAP extension the path to lldb-dap.
-Change the &quot;type&quot;: &quot;cppdbg&quot; to &quot;type&quot;: &quot;lldb-dap&quot; in your .vscode/launch.json file.
-
-Enjoy it." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-11-10T19:32:49+08:00" />
-<meta property="article:modified_time" content="2024-11-10T19:32:49+08:00" /><meta property="og:site_name" content="Hi!" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Debug C/C&#43;&#43; Code in VScode"/>
+</noscript><meta property="og:url" content="https://allinleeyl.github.io/homepage/posts/debug-cpp-in-vscode/">
+  <meta property="og:site_name" content="Allin Lee&#39;s Home">
+  <meta property="og:title" content="How to Debug C/C&#43;&#43; Code in VScode">
+  <meta property="og:description" content="Q&amp;A Why is my debugger stuck at retrieving local variables?
+If you’re on MacOS, take a breath. This is not your problem. There are known bugs with regrad to debugging C/C&#43;&#43; code using VSCode, refer to this answer. However, this answer’s solution does not work. Here’s the solution:
+Install the lldb-dap. The lldb-dap binary is a command line tool that implements the Debug Adapter Protocol. It’s a substitute for the lldb-mi debugger for VSCode. Install a extension named LLVM DAP (extension ID: llvm-vs-code-extensions.lldb-dap). Tell the LLVM DAP extension the path to lldb-dap. Change the &#34;type&#34;: &#34;cppdbg&#34; to &#34;type&#34;: &#34;lldb-dap&#34; in your .vscode/launch.json file. Enjoy it.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-10T19:32:49+08:00">
+    <meta property="article:modified_time" content="2024-11-10T19:32:49+08:00">
+    <meta property="article:tag" content="How To">
+    <meta property="article:tag" content="Programming">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to Debug C/C&#43;&#43; Code in VScode">
 <meta name="twitter:description" content="Q&amp;A
 Why is my debugger stuck at retrieving local variables?
 If you&rsquo;re on MacOS, take a breath. This is not your problem. There are known bugs with regrad to debugging C/C&#43;&#43; code using VSCode, refer to this answer. However, this answer&rsquo;s solution does not work. Here&rsquo;s the solution:
@@ -91,7 +88,7 @@ Install a extension named LLVM DAP (extension ID: llvm-vs-code-extensions.lldb-d
 Tell the LLVM DAP extension the path to lldb-dap.
 Change the &quot;type&quot;: &quot;cppdbg&quot; to &quot;type&quot;: &quot;lldb-dap&quot; in your .vscode/launch.json file.
 
-Enjoy it."/>
+Enjoy it.">
 
 
 <script type="application/ld+json">
@@ -162,7 +159,7 @@ Enjoy it."/>
         <div class="logo">
             <a href="https://allinleeyl.github.io/homepage/" accesskey="h" title="Allin Lee&#39;s Home (Alt + H)">Allin Lee&#39;s Home</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -222,8 +219,7 @@ Enjoy it."/>
 <p>Enjoy it.</p>
 <p><strong>Why won&rsquo;t my breakpoints get hit?</strong></p>
 <blockquote>
-<p>Turning on optimization flags makes the compiler attempt to improve the performance and/or code size at the expense of compilation time and possibly the ability to debug the program.</p>
-</blockquote>
+<p>Turning on optimization flags makes the compiler attempt to improve the performance and/or code size at the expense of compilation time and possibly the ability to debug the program.</p></blockquote>
 <ul>
 <li>Check if you have compiled your project with <code>-g</code> option.</li>
 <li>CMake: Check if <code>CMAKE_BUILD_TYPE</code> is set to <code>Debug</code>.</li>
